@@ -9,7 +9,9 @@ app.get("/", (req, res) => {
 });
 app.get("/about", (req, res) => {
   //   res.json({ message: "Welcome to the API" });
-  res.send("Welcome to the About API");
+  res.send(`
+    
+    `);
 });
 
 app.listen(PORT, () => {
