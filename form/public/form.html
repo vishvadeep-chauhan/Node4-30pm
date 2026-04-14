@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 flex items-center justify-center h-screen">
+
+  <form action="/submit" method="POST" class="bg-white p-6 rounded shadow-md w-96 space-y-4">
+
+    <h2 class="text-xl font-bold">Contact Form</h2>
+
+    <input name="name" type="text" placeholder="Name" class="w-full border p-2" required>
+
+    <input name="email" type="email" placeholder="Email" class="w-full border p-2" required>
+
+    <input name="number" type="text" placeholder="Number" class="w-full border p-2" required>
+
+    <textarea name="message" placeholder="Message" class="w-full border p-2"></textarea>
+
+    <button class="bg-blue-500 text-white px-4 py-2 w-full">
+      Submit
+    </button>
+
+  </form>
+
+</body>
+</html>
