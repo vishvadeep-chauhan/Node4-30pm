@@ -11,17 +11,38 @@ const PORT = 3000;
 app.set("view engine", "ejs");
 
 // route
-app.get("/", (req, res) => {
+// app.get("/", (req, res) => {
+//   const user = {
+//     name: "Vishv",
+//     age: 20,
+//     role: "MERN Dev"
+//   };
+
+//   res.render("index", user);
+// });
+
+
+app.get("/profile", (req,res) => {
+
   const user = {
-    name: "Vishv",
-    age: 20,
-    role: "MERN Dev"
-  };
+    name: "deep",
+    age : 22
+  }
 
   res.render("index", user);
+
+
 });
+
+
+
+
+
+
+
 
 // server start
 app.listen(PORT, () => {
   console.log(`Server is running on port ${PORT}`);
 });
+
