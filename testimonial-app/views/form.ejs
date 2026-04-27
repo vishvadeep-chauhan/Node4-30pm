@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Form</title>
+</head>
+<body>
+  <h1>Add Testimonial</h1>
+
+  <form action="/submit" method="POST" enctype="multipart/form-data">
+    <input type="text" name="name" placeholder="Your Name" required />
+    <br><br>
+
+    <textarea name="message" placeholder="Your Message" required></textarea>
+    <br><br>
+
+    <input type="file" name="image" required />
+    <br><br>
+
+    <button type="submit">Submit</button>
+  </form>
+</body>
+</html>

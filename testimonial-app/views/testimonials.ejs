@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Testimonials</title>
+</head>
+<body>
+
+  <h1>All Testimonials</h1>
+
+  <% testimonials.forEach(t => { %>
+    <div>
+      <h3><%= t.name %></h3>
+      <p><%= t.message %></p>
+      <img src="/uploads/<%= t.image %>" width="150" />
+    </div>
+    <hr>
+  <% }) %>
+
+</body>
+</html>
